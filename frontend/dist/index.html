@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" class="h-full">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1F4E79" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <title>FamilyPay – Family Wallet</title>
+    <script type="module" crossorigin src="/assets/index-Q_ivPekq.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CuGK_jY9.css">
+  </head>
+  <body class="h-full bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+    <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/service-worker.js")
+            .catch((err) => console.error("SW registration failed", err));
+        });
+      }
+    </script>
+  </body>
+  </html>
+
